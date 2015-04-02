@@ -1,5 +1,6 @@
 language: java
 
+before_deploy: "echo 'ready?'"
 deploy:
   provider: releases
   file: "1.0-SNAPSHOT.jar"
