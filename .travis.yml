@@ -1,16 +1,16 @@
 language: java
 
-before_deploy:
-  - git config --global user.email "builds@travis-ci.com"
-  - git config --global user.name "Travis CI"
-  - export GIT_TAG=$TRAVIS_BRANCH-v0.1.$TRAVIS_BUILD_NUMBER
-  - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
-  - git push -q https://${GH_TOKEN}@github.com/annas/test --tags
+#before_deploy:
+#  - git config --global user.email "builds@travis-ci.com"
+#  - git config --global user.name "Travis CI"
+#  - export GIT_TAG=$TRAVIS_BRANCH-v0.1.$TRAVIS_BUILD_NUMBER
+#  - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
+#  - git push -q https://${GH_TOKEN}@github.com/annas/test --tags
 
-deploy:
-  provider: releases
-  api_key:
-    secure: "U4C5oqGL+w7u2yxNhbaan8Tlh+kIyvNJlirvVp/VGy+Pg+SXLosn3KMl9sm/Vf2N5zzfbM26LPOdcNgsm9xJMqGllAks4eMu6DxXnOGsPgislk2UxkHLU9pCi5nIEp+lvfNbdn1UBoj/xnGTsHx1sBjnc6FHbtqYD6fX5Cx95RI="
-  file: 
-   -"$HOME/SNAPSHOT.jar"
-  skip_cleanup: true
+#deploy:
+#  provider: releases
+#  api_key:
+#    secure: "U4C5oqGL+w7u2yxNhbaan8Tlh+kIyvNJlirvVp/VGy+Pg+SXLosn3KMl9sm/Vf2N5zzfbM26LPOdcNgsm9xJMqGllAks4eMu6DxXnOGsPgislk2UxkHLU9pCi5nIEp+lvfNbdn1UBoj/xnGTsHx1sBjnc6FHbtqYD6fX5Cx95RI="
+#  file: 
+#   -"$HOME/SNAPSHOT.jar"
+#  skip_cleanup: true
