@@ -3,5 +3,6 @@ language: java
 before_deploy: "echo 'ready?'"
 deploy:
   provider: releases
+  api_key:
   file: "1.0-SNAPSHOT.jar"
   skip_cleanup: true
