@@ -4,5 +4,6 @@ before_deploy: "echo 'ready?'"
 deploy:
   provider: releases
   api_key:
+  secure: 
   file: "1.0-SNAPSHOT.jar"
   skip_cleanup: true
