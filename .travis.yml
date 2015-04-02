@@ -2,7 +2,6 @@ language: java
 
 deploy:
   provider: releases
-  api_key: "GITHUB OAUTH TOKEN"
   file: "1.0-SNAPSHOT.jar"
   skip_cleanup: true
   on:
