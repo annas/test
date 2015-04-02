@@ -12,5 +12,5 @@ deploy:
   api_key:
     secure: "U4C5oqGL+w7u2yxNhbaan8Tlh+kIyvNJlirvVp/VGy+Pg+SXLosn3KMl9sm/Vf2N5zzfbM26LPOdcNgsm9xJMqGllAks4eMu6DxXnOGsPgislk2UxkHLU9pCi5nIEp+lvfNbdn1UBoj/xnGTsHx1sBjnc6FHbtqYD6fX5Cx95RI="
   file: 
-   -"target/SNAPSHOT.jar"
+   -"$HOME/target/SNAPSHOT.jar"
   skip_cleanup: true
