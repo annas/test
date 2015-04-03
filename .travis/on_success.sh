@@ -1,8 +1,8 @@
 #!/bin/bash
-echo "Executing mvn javadoc:javadoc...\n"
+echo "Executing mvn javadoc:javadoc..."
 mvn javadoc:javadoc
 
-echo "Publishing javadoc...\n"
+echo "Publishing javadoc..."
 
   cp -R target/site/javadocs $HOME/javadoc-latest
   
@@ -11,7 +11,7 @@ echo "Publishing javadoc...\n"
   git config --global user.name "travis-ci"
   git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/annas/test gh-pages > /dev/null
   
-  echo "Cloned and switched to the branch\n"
+  echo "Cloned and switched to the gh-pages branch"
   
   cd gh-pages
   git rm -rf ./javadoc
