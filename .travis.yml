@@ -5,6 +5,10 @@ language: java
 after_success:
   - "./.travis/on_success.sh"
 
+branches:
+  only:
+   - master
+
 #before_deploy:
 #  - git config --global user.email "builds@travis-ci.com"
 #  - git config --global user.name "Travis CI"
