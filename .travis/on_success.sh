@@ -4,7 +4,7 @@ mvn javadoc:javadoc
 
 echo "Publishing javadoc...\n"
 
-  cp -R target/site/javadoc $HOME/javadoc-latest
+  cp -R target/site/javadocs $HOME/javadoc-latest
   
   cd $HOME
   git config --global user.email "travis@travis-ci.org"
