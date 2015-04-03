@@ -37,8 +37,8 @@
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>2.10.1</version>
 				<configuration>
-					<show>protected</show>
-					<windowtitle>annas: Open source graph theory and algorithm library</windowtitle>
+					
+					<windowtitle>annas</windowtitle>
 				</configuration>
 			</plugin>
 			<plugin>
