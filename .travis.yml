@@ -1,6 +1,9 @@
 language: java
 
-script: "./.travis/on_success.sh"
+#script: 
+
+after_success:
+  - "./.travis/on_success.sh"
 
 #before_deploy:
 #  - git config --global user.email "builds@travis-ci.com"
